@@ -25,25 +25,25 @@ This project is a Tkinter-based desktop application that allows users to search 
 
 ## Features
 
-•Search Movies/TV Shows: Fetch details such as title, cast, director, genre, IMDb rating, plot, and trailer links.
+•Search Movies/TV Shows: Fetch details such as title, cast, director, genre, IMDb rating, plot, and trailer links
 
-•Cache Results with Pinecone: Avoids redundant API calls by storing and retrieving search results.
+•Cache Results with Pinecone: Avoids redundant API calls by storing and retrieving search results
 
-•YouTube Trailer Fetching: Retrieves up to 5 trailers for the searched movie/series.
+•YouTube Trailer Fetching: Retrieves up to 5 trailers for the searched movie/series
 
-•DuckDuckGo Integration: Provides additional related links.
+•DuckDuckGo Integration: Provides additional related links
 
-•Interactive GUI: Users can search and click links directly from the interface.
+•Interactive GUI: Users can search and click links directly from the interface
 
 
 ## Scripts/Modules
-• app.py: Main script that runs the Tkinter GUI and orchestrates the interaction between various services.
+• app.py: Main script that runs the Tkinter GUI and orchestrates the interaction between various services
 
-• search_tools.py: Contains functions for interacting with external APIs (OMDb, DuckDuckGo, YouTube) and processing the results.
+• search_tools.py: Contains functions for interacting with external APIs (OMDb, DuckDuckGo, YouTube) and processing the results
 
-• agent.py: Manages the integration of OpenAI GPT-4 via LangChain for generating context or answers based on user queries.
+• agent.py: Manages the integration of OpenAI GPT-4 via LangChain for generating context or answers based on user queries
 
-• retrieval.py: Handles the retrieval of cached results from Pinecone and manages search result caching.
+• retrieval.py: Handles the retrieval of cached results from Pinecone and manages search result caching
 
 ## Installation & Setup
 
@@ -75,7 +75,15 @@ INDEX_NAME=your_pinecone_index
   python app.py
 ```
 
+## Challenges Faced
 
+•Pinecone Index Handling: Ensuring correct dimensions (1536) and avoiding conflicts with existing indexes
+
+•YouTube API Data Handling: Converting trailer results into a list of URLs
+
+•DuckDuckGo Parsing Issues: Some searches returned non-useful results, requiring filtering
+
+•GUI Link Handling: Implementing clickable links in Tkinter required extra formatting and event binding
 
 
 
