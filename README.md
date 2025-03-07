@@ -46,8 +46,9 @@ cd movie-search-app
 ```
 
 2. Install dependencies:
-
+```
 pip install -r requirements.txt
+```
 
 3. Create a .env file and add API keys:
 ```
