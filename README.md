@@ -8,7 +8,7 @@ This project is a Tkinter-based desktop application that allows users to search 
 
 •Tkinter (For GUI development)
 
-•LangChain (For OpenAI LLM integration)
+•LangChain (For OpenAI GPT-4 integration, providing advanced LLM functionality)
 
 •Pinecone (For vector database storage and retrieval)
 
@@ -36,13 +36,22 @@ This project is a Tkinter-based desktop application that allows users to search 
 •Interactive GUI: Users can search and click links directly from the interface.
 
 
+## Scripts/Modules
+• app.py: Main script that runs the Tkinter GUI and orchestrates the interaction between various services.
+
+• search_tools.py: Contains functions for interacting with external APIs (OMDb, DuckDuckGo, YouTube) and processing the results.
+
+• agent.py: Manages the integration of OpenAI GPT-4 via LangChain for generating context or answers based on user queries.
+
+• retrieval.py: Handles the retrieval of cached results from Pinecone and manages search result caching.
+
 ## Installation & Setup
 
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-repo/movie-search-app.git
-cd movie-search-app
+git clone https://github.com/OyeBI-01/RAG-Agent-for-Movie-and-Series-Search.git
+cd RAG-Agent-for-Movie-and-Series-Search
 ```
 
 2. Install dependencies:
