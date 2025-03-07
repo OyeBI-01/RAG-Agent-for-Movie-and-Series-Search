@@ -40,8 +40,8 @@ This project is a Tkinter-based desktop application that allows users to search 
 
 1. Clone the repository:
 
-git clone https://github.com/your-repo/movie-search-app.git
-cd movie-search-app
+"""git clone https://github.com/your-repo/movie-search-app.git
+cd movie-search-app"""
 
 2. Install dependencies:
 
