@@ -50,16 +50,21 @@ cd movie-search-app
 pip install -r requirements.txt
 
 3. Create a .env file and add API keys:
-
+```
 OPENAI_API_KEY=your_openai_api_key
+
 OMDB_API_KEY=your_omdb_api_key
+
 PINECONE_API_KEY=your_pinecone_api_key
+
 INDEX_NAME=your_pinecone_index
+```
 
 4. Run the application:
+```
   python app.py
+```
 
-python app.py
 
 
 
